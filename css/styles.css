@@ -80,7 +80,7 @@ nav .d-flex-var1{
   nav .search-bar button {
       grid-area: btn;
       background: white;
-      background-image: url(img/loupe.svg);
+      background-image: url(../img/loupe.svg);
       background-size: 50% 50%;
       background-repeat: no-repeat;
       background-position: 50% 50%;
@@ -89,7 +89,7 @@ nav .d-flex-var1{
   }
   nav .search-bar button:hover {
     background: #ddd;
-    background-image: url(img/loupe.svg);
+    background-image: url(../img/loupe.svg);
     background-size: 50% 50%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -106,7 +106,7 @@ nav .d-flex-var1{
 }
 /* background section*/
 .background-img{
-    background-image: url(img/background.jpg);
+    background-image: url(../img/background.jpg);
     background-size: cover;
     position: absolute;
     top: 6.4rem;
