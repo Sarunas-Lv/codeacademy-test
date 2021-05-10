@@ -2,14 +2,91 @@
 :root{
     --cyan:#1FE0D0;
     --red:#E01F2F;
-    --gray:#073833;
+    --gray:#084b44;
 }
 *{
     box-sizing: border-box;
 }
+img{
+    object-fit: cover;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
 /* navbar section */
+nav{
+    background-color: var(--gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+	align-items: center;
+    gap:2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+  .logo{
+      color: white;
+      font-size: 2rem;
+  }
+ 
+  nav .search-bar{
+      width: 40%;
+      height: 1.5rem;
+  }
+  .grid-area{
+      height: 100%;
+      width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: ". btn srch srch srch srch ";
+  }
+  nav input[type=text] {
+    grid-area: srch;
+    font-size: 1rem;
+    border: none;
+  }
+  nav .search-bar button {
+      grid-area: btn;
+      background: white;
+      background-image: url(img/loupe.svg);
+      background-size: 50% 50%;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      border: none;
+      cursor: pointer;
+  }
+  nav .search-bar button:hover {
+    background: #ddd;
+    background-image: url(img/loupe.svg);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+@media screen and (min-width: 789px){
+    nav{
+        height: 50px;
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        grid-template-areas: " . . . . logo . . searh . . . .";
+    }
+    .logo{
+        grid-area: logo;
+    }
+    .search-bar{
+        grid-area: search;
+        width: 100%;
+    }
+}
 /* background section*/
+.background-img{
+    background-image: url(img/background.jpg);
+    background-size: cover;
+}
 /* title div */
+h1{
+    color: var(--gray);
+    text-align: center;
+}
 /* how-it-started div */
 /* contacts div */
 @media screen and (min-width: 789px){
