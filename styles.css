@@ -15,6 +15,7 @@ img{
 }
 .container{
     width: 100%;
+    padding: 0.2rem;
 }
 .d-flex-var1{
     display: flex;
@@ -29,13 +30,15 @@ img{
     align-items: center;
 }
 .d-flex-var3{
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 @media screen and (min-width: 789px){
     .container{
     margin: 0 auto;
+    padding: 0;
     max-width: 700px;}
     .d-flex-var1{
         flex-direction: row;
@@ -87,7 +90,7 @@ nav .d-flex-var1{
   nav .search-bar button:hover {
     background: #ddd;
     background-image: url(img/loupe.svg);
-    background-size: 20px 20px;
+    background-size: 50% 50%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
@@ -154,6 +157,7 @@ h2{
     margin: 0;
     margin-top: 0.5rem;
 }
+
 @media screen and (min-width: 789px){
     .small-img{
         height: 25%;
@@ -176,7 +180,6 @@ h2{
     color: var(--red);
     font-size: 1.2rem;
     font-weight: 800;
-    margin-top: 0.5rem;
 }
 .contact-content-div p{
     margin:0;
@@ -185,6 +188,7 @@ h2{
     line-height: 1.5rem;
 }
 .big-img{
+    margin-bottom: 0.5rem;
     height: 45vw;
     width: 45vw;
     border-radius: 50%;
@@ -193,8 +197,8 @@ h2{
     .contacts{
         width: 100%;
         flex-direction: row;
-        justify-content: center;
-        gap: 10%;
+        justify-content: start;
+        gap: 30%;
         align-items: center;
     }
     .contact-content-div{
