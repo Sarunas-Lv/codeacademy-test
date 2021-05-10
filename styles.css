@@ -16,13 +16,15 @@ img{
 /* navbar section */
 nav{
     background-color: var(--gray);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-	align-items: center;
-    gap:1.2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+}
+.hidden-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+	align-items: center;
+    gap:1.2rem;
 }
   .logo{
       color: white;
@@ -66,11 +68,14 @@ nav{
     nav{
         padding-top: 2rem;
         padding-bottom: 2rem;
+    }
+    .hidden-container{
+        margin: 0 auto;
+        width: 50%;
+        max-width: 700px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding-right: 20%;
-        padding-left: 20%;
     }
     nav .search-bar{
         height: 1.7rem;
@@ -87,7 +92,7 @@ nav{
     width: 100%;
     z-index: -1;
 }
-@media screen and (min-width: 789px){
+@media only screen and (min-width: 789px){
     .background-img{
         top: 5.6rem;
         height: 80rem;
@@ -115,16 +120,19 @@ h1{
     margin: 0 auto;
 }
 @media screen and (min-width: 789px){
+    
     .content{
         width: 60%;
+        max-width: 700px;
     }
     .title{
-        height: 70rem;
+        height: 72rem;
     }
     
 }
 /* how-it-started div */
 .main-content{
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -160,9 +168,12 @@ h2{
 }
 @media screen and (min-width: 789px){
     .small-img{
-        height: 30%;
-        width: 30%;
+        height: 25%;
+        width: 25%;
         border-radius: 50%;
+    }
+    .three-images-div{
+        justify-content: space-between;
     }
 }
 /* contacts div */
@@ -195,7 +206,23 @@ h2{
     border-radius: 50%;
 }
 @media screen and (min-width: 789px){
-    
+    .contacts{
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10%;
+        align-items: center;
+    }
+    .contact-content-div{
+        flex-direction: row;
+        align-items: center;
+        gap:10px;
+    }
+    .big-img{
+        height: 98px;
+        width: 98px;
+        border-radius: 50%;
+    }
 }
 /* footer section */
 footer{
@@ -227,4 +254,10 @@ footer{
 }
 .footer-item a:hover{
     color: var(--cyan);
+}
+@media screen and (min-width: 789px){
+    footer{
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
