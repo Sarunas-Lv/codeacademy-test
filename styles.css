@@ -1,8 +1,8 @@
 /* common styles */
 :root{
-    --cyan:#1FE0D0;
+    --cyan:#20afa3;
     --red:#E01F2F;
-    --gray:#084b44;
+    --gray:#2b3131;
 }
 *{
     box-sizing: border-box;
@@ -81,13 +81,60 @@ nav{
 .background-img{
     background-image: url(img/background.jpg);
     background-size: cover;
+    position: absolute;
+    top: 7rem;
+    height: 24rem;
+    width: 100%;
+    z-index: -1;
 }
 /* title div */
+.title{
+    height: 24rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1.2rem;
+}
 h1{
     color: var(--gray);
     text-align: center;
+    font-weight: 800;
+    font-size: 3rem;
+    margin: 0 auto;
+}
+@media screen and (min-width: 789px){
+    
 }
 /* how-it-started div */
+.main-content{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.how-it-started{
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.three-images-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:0.7rem;
+}
+.small-img{
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+}
+h2{
+    font-weight: 900;
+    color: var(--cyan);
+}
 /* contacts div */
 @media screen and (min-width: 789px){
     
