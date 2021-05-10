@@ -1,0 +1,17 @@
+/* common styles */
+:root{
+    --cyan:#1FE0D0;
+    --red:#E01F2F;
+    --gray:#073833;
+}
+*{
+    box-sizing: border-box;
+}
+/* navbar section */
+/* background section*/
+/* title div */
+/* how-it-started div */
+/* contacts div */
+@media screen and (min-width: 789px){
+    
+}
