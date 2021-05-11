@@ -108,6 +108,7 @@ nav .d-flex-var1{
 .background-img{
     background-image: url(../img/background.jpg);
     background-size: cover;
+    background-position: 50% 50%;
     position: absolute;
     top: 6.4rem;
     height: 384px;
